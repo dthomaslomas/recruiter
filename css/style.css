@@ -225,7 +225,7 @@ a:hover {
 
 #top-bar .navbar-nav li a:hover {
   background: transparent;
-  color:#502260;
+  color:black;
 }
 
 #top-bar.animated-header {
@@ -248,7 +248,7 @@ a:hover {
 }
 
 #top-bar .main-menu li a:hover {
-  color:#502260;
+  color:black;
 }
 
 .navbar-custom .nav li a {
@@ -370,7 +370,7 @@ a:hover {
 }
 
 #call-to-action {
-  background: #502260;
+  background: black;
   background-size: cover;
   background-attachment: fixed;
   padding: 25px 0;
@@ -611,7 +611,7 @@ figure figcaption h4 {
 }
 
 figure figcaption h4 a {
-  color: #502260;
+  color: black;
 }
 
 figure figcaption p {
@@ -1463,7 +1463,7 @@ background-color: #e55e3f;
 border: none !important;
 }
 .nav-tabs>li {
-    background: #502260;
+    background: black;
     color: white;	
 }
 .nav-tabs>li>a {
