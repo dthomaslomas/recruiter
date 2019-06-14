@@ -181,6 +181,10 @@ a:hover {
 
 
 /*=== MEDIA QUERY ===*/
+.navbar-nav{
+    margin: 10px;
+  }
+
 .navbar-default .navbar-nav li a:hover {
   color: #02bdd5;
 }
@@ -189,6 +193,7 @@ a:hover {
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
+  height: 65px;
 }
 
 .navbar.navbar-default .navbar-toggle {
@@ -196,13 +201,17 @@ a:hover {
 }
 
 .navbar-header .navbar-brand {
-  padding: 5px 0;
+  padding: 8px 0;
+  height: 70px;
 }
 
 .navbar-header .navbar-brand a {
-  height: auto;
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 0px;
+}
+
+.navbar-header .navbar-brand a img {
+  height: 60px;
 }
 
 .navbar-inverse .navbar-toggle {
