@@ -1,3 +1,23 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@campsy 
+dthomaslomas
+/
+recruiter
+0
+00
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
+recruiter/sitemap.xml
+ Daniel Lomas robots.txt and sitemap.xml created and added to files.
+d8a9914 on Jul 5, 2019
+33 lines (33 sloc)  1.01 KB
+  
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
@@ -26,6 +46,18 @@
    </url>
      <url>
       <loc>https://www.dtlrecruitment.co.uk/contact</loc>
+      <lastmod>2019-06-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.dtlrecruitment.co.uk/recruitment-consultant/recruitment-consultant-bacup.html</loc>
+      <lastmod>2019-06-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.dtlrecruitment.co.uk/recruitment-consultant/recruitment-consultant-oldham.html</loc>
       <lastmod>2019-06-06</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>

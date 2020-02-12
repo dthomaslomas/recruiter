@@ -41,45 +41,72 @@
     /* ========================================================================= */
     /*   Contact Form Validating
     /* ========================================================================= */
-
-    $('#contact-form').validate({
+    $('#contact-form').submit(function(e){
+        e.preventDefault();
+    }).validate({
+        onsubmit: true,
         rules: {
             name: {
                 required: true, minlength: 4
-            }
-            , email: {
+            }, 
+            email: {
                 required: true, email: true
-            }
-            , subject: {
+            }, 
+            telephone: {
+                required: true,
+            }, 
+            location: {
                 required: false,
-            }
-            , message: {
+            }, 
+            message: {
                 required: true,
             }
-            ,
-        }
-        , messages: {
+        }, 
+        messages: {
             user_name: {
                 required: "Come on, you have a name don't you?", minlength: "Your name must consist of at least 2 characters"
-            }
-            , email: {
-                required: "Please put your email address",
-            }
-            , message: {
+            }, 
+            email: {
+                required: "Please put your email address above",
+            }, 
+            telephone: {
+                required: "Please put your telephone number above",
+            }, 
+            message: {
                 required: "Put some messages here?", minlength: "Your name must consist of at least 2 characters"
             }
-            ,
-        }
-        , submitHandler: function(form) {
-            $(form).ajaxSubmit( {
-                type:"POST", data: $(form).serialize(), url:"sendmail.php", success: function() {
-                    $('#contact-form #success').fadeIn();
-                }
-                , error: function() {
-                    $('#contact-form #error').fadeIn();
-                }
+        }, 
+        submitHandler: function(form) {
+            var rawData = $(form).serializeArray();
+            var cleanData = {
+                name: rawData[1].value,
+                email: rawData[2].value,
+                telephone: rawData[3].value,
+                location: rawData[4].value,
+                message: rawData[5].value
+            };
+            if(!document.getElementById("filter").value.length > 0 ){
+                $.ajax( {
+                    type:"POST", 
+                    data: JSON.stringify(cleanData), 
+                    contentType:"application/json; charset=utf-8",
+                    dataType:"json",
+                    url:"https://dva23vxcsl.execute-api.eu-west-1.amazonaws.com/prod", success: function(data, status) {
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("telephone").value = "";
+                        document.getElementById("location").value = "";
+                        document.getElementById("message").value = "";
+                        $('#contact-form #success').fadeIn();
+                    }
+                    , error: function(status) {
+                        $('#contact-form #error').fadeIn();
+                    }
+                });
+            } else {
+                return false;
             }
-            );
+            return false;
         }
     });
 

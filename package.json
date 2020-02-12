@@ -1,0 +1,10 @@
+{
+  "name": "recruiter",
+  "version": "1.0.0",
+  "scripts":{
+    "develop":"live-server --port=3000"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

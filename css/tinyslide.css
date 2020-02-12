@@ -23,7 +23,7 @@ html, body { width: 100%; height: 100%; }
 /* line 57, sass/tinyslide.scss */
 .tinyslide figure { height: 100%; float: left; position: relative; z-index: 1; }
 /* line 63, sass/tinyslide.scss */
-.tinyslide figure img { width: 100%; height: 100%; -o-object-fit: cover; /*object-fit: cover;*/ }
+.tinyslide figure img { width: 100%; -o-object-fit: cover; object-fit: cover; height: 100%; }
 /* line 69, ass/tinyslide.scss */
 .tinyslide figure figcaption { position: absolute; font-size: 1.5em; color: white;/* bottom: .5em;*/ top:8em; left:2em;right: 2em; z-index: 2; opacity: 0; }
 /* line 79, sass/tinyslide.scss */

@@ -158,8 +158,10 @@
                          consectetur adipisicing elit. Dolore, ea!
                     </p> -->
                     <div class="contact-form">
-                        <form id="contact-form" method="#" action="#" role="form">
-                
+                        <form id="contact-form" role="form" method="post">
+                            <div style="display:none;">
+                                <input type="text" placeholder="Filter" class="form-control" name="filter" id="filter">
+                            </div>
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
                                 <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
                             </div>
@@ -169,7 +171,11 @@
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                                <input type="number" placeholder="Telephone" class="form-control" name="telephone" id="telephone">
+                            </div>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                <input type="location" placeholder="Your Location" class="form-control" name="location" id="location" >
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
@@ -264,7 +270,7 @@
             ================================================== -->
             <footer id="footer">
                 <div class="container">
-                   <div class="col-md-8">
+                   <div class="col-md-12">
                         <p class="copyright">Copyright: <span><script>document.write(new Date().getFullYear())</script></span><a href="" target="_blank"> DTL Recruitment</a>. <br> 
                         </p>
                     </div>
