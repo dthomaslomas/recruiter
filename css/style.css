@@ -50,6 +50,11 @@ a:hover {
   line-height: 20px;
 }
 
+.section-heading p a {
+ color: inherit;
+ text-decoration: underline;
+}
+
 .title {
   font-size: 30px;
   line-height: 1.1;
